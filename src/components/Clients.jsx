@@ -143,8 +143,8 @@ const Clients = ({ onBack }) => {
 
       {/* Add New Client Modal/Sidebar */}
       {showAddModal && (
-        <div className="fixed inset-0 bg-white flex justify-end z-50">
-          <div className="bg-white w-96 h-full shadow-lg">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white w-full max-w-md mx-4 rounded-lg shadow-xl max-h-[90vh] overflow-y-auto">
             <div className="flex items-center justify-between p-6 border-b border-gray-200">
               <h3 className="text-lg font-semibold">Add New Client</h3>
               <button 
@@ -264,8 +264,8 @@ const Clients = ({ onBack }) => {
 
       {/* Edit Client Modal/Sidebar */}
       {showEditModal && (
-        <div className="fixed inset-0 bg-white flex justify-end z-50">
-          <div className="bg-white w-96 h-full shadow-lg">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white w-full max-w-md mx-4 rounded-lg shadow-xl max-h-[90vh] overflow-y-auto">
             <div className="flex items-center justify-between p-6 border-b border-gray-200">
               <h3 className="text-lg font-semibold">Edit Client</h3>
               <button 

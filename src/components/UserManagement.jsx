@@ -419,8 +419,8 @@ const UserManagement = ({ activeSub, setActiveSub }) => {
 
       {/* Add Module Modal/Sidebar */}
       {showAddModuleModal && (
-        <div className="fixed inset-0 bg-white flex justify-end z-50">
-          <div className="bg-white w-full md:w-96 h-full shadow-lg overflow-y-auto">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white w-full max-w-md mx-4 rounded-lg shadow-xl max-h-[90vh] overflow-y-auto">
             <div className="flex items-center justify-between p-6 border-b border-gray-200">
               <h3 className="text-lg font-semibold">Add Module</h3>
               <button 
@@ -467,8 +467,8 @@ const UserManagement = ({ activeSub, setActiveSub }) => {
 
       {/* Add Action Modal/Sidebar */}
       {showAddActionModal && (
-        <div className="fixed inset-0 bg-white flex justify-end z-50">
-          <div className="bg-white w-full md:w-96 h-full shadow-lg overflow-y-auto">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white w-full max-w-md mx-4 rounded-lg shadow-xl max-h-[90vh] overflow-y-auto">
             <div className="flex items-center justify-between p-6 border-b border-gray-200">
               <h3 className="text-lg font-semibold">Add Action</h3>
               <button 
@@ -532,8 +532,8 @@ const UserManagement = ({ activeSub, setActiveSub }) => {
 
       {/* Assign Role-Module Modal/Sidebar */}
       {showAssignRoleModuleModal && (
-        <div className="fixed inset-0 bg-white flex justify-end z-50">
-          <div className="bg-white w-full md:w-96 h-full shadow-lg overflow-y-auto">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white w-full max-w-md mx-4 rounded-lg shadow-xl max-h-[90vh] overflow-y-auto">
             <div className="flex items-center justify-between p-6 border-b border-gray-200">
               <h3 className="text-lg font-semibold">Assign Role-Module</h3>
               <button 
@@ -601,8 +601,8 @@ const UserManagement = ({ activeSub, setActiveSub }) => {
 
       {/* Create New User Modal/Sidebar */}
       {showAddUserModal && (
-        <div className="fixed inset-0 bg-white flex justify-end z-50">
-          <div className="bg-white w-full md:w-96 h-full shadow-lg overflow-y-auto">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white w-full max-w-md mx-4 rounded-lg shadow-xl max-h-[90vh] overflow-y-auto">
             <div className="flex items-center justify-between p-6 border-b border-gray-200">
               <h3 className="text-lg font-semibold">Create New User</h3>
               <button 
@@ -669,8 +669,8 @@ const UserManagement = ({ activeSub, setActiveSub }) => {
 
       {/* Create New Role Modal/Sidebar */}
       {showAddRoleModal && (
-        <div className="fixed inset-0 bg-white flex justify-end z-50">
-          <div className="bg-white w-full md:w-96 h-full shadow-lg overflow-y-auto">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white w-full max-w-md mx-4 rounded-lg shadow-xl max-h-[90vh] overflow-y-auto">
             <div className="flex items-center justify-between p-6 border-b border-gray-200">
               <h3 className="text-lg font-semibold">Create New Role</h3>
               <button 
@@ -717,8 +717,8 @@ const UserManagement = ({ activeSub, setActiveSub }) => {
 
       {/* Edit User Modal/Sidebar */}
       {showEditUserModal && (
-        <div className="fixed inset-0 bg-white flex justify-end z-50">
-          <div className="bg-white w-full md:w-96 h-full shadow-lg overflow-y-auto">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white w-full max-w-md mx-4 rounded-lg shadow-xl max-h-[90vh] overflow-y-auto">
             <div className="flex items-center justify-between p-6 border-b border-gray-200">
               <h3 className="text-lg font-semibold">Edit User</h3>
               <button 
@@ -800,8 +800,8 @@ const UserManagement = ({ activeSub, setActiveSub }) => {
 
       {/* Edit Role Modal/Sidebar */}
       {showEditRoleModal && (
-        <div className="fixed inset-0 bg-white flex justify-end z-50">
-          <div className="bg-white w-full md:w-96 h-full shadow-lg overflow-y-auto">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white w-full max-w-md mx-4 rounded-lg shadow-xl max-h-[90vh] overflow-y-auto">
             <div className="flex items-center justify-between p-6 border-b border-gray-200">
               <h3 className="text-lg font-semibold">Edit Role</h3>
               <button 
@@ -848,8 +848,8 @@ const UserManagement = ({ activeSub, setActiveSub }) => {
 
       {/* Edit Module Modal/Sidebar */}
       {showEditModuleModal && (
-        <div className="fixed inset-0 bg-white flex justify-end z-50">
-          <div className="bg-white w-full md:w-96 h-full shadow-lg overflow-y-auto">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white w-full max-w-md mx-4 rounded-lg shadow-xl max-h-[90vh] overflow-y-auto">
             <div className="flex items-center justify-between p-6 border-b border-gray-200">
               <h3 className="text-lg font-semibold">Edit Module</h3>
               <button 
@@ -896,8 +896,8 @@ const UserManagement = ({ activeSub, setActiveSub }) => {
 
       {/* Edit Action Modal/Sidebar */}
       {showEditActionModal && (
-        <div className="fixed inset-0 bg-white flex justify-end z-50">
-          <div className="bg-white w-full md:w-96 h-full shadow-lg overflow-y-auto">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white w-full max-w-md mx-4 rounded-lg shadow-xl max-h-[90vh] overflow-y-auto">
             <div className="flex items-center justify-between p-6 border-b border-gray-200">
               <h3 className="text-lg font-semibold">Edit Action</h3>
               <button 
@@ -957,8 +957,8 @@ const UserManagement = ({ activeSub, setActiveSub }) => {
 
       {/* Edit Assign Role-Module Modal/Sidebar */}
       {showEditAssignModal && (
-        <div className="fixed inset-0 bg-white flex justify-end z-50">
-          <div className="bg-white w-full md:w-96 h-full shadow-lg overflow-y-auto">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white w-full max-w-md mx-4 rounded-lg shadow-xl max-h-[90vh] overflow-y-auto">
             <div className="flex items-center justify-between p-6 border-b border-gray-200">
               <h3 className="text-lg font-semibold">Edit Assign Role-Module</h3>
               <button 
