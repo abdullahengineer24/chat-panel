@@ -419,8 +419,8 @@ const UserManagement = ({ activeSub, setActiveSub }) => {
 
       {/* Add Module Modal/Sidebar */}
       {showAddModuleModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white w-full max-w-md mx-4 rounded-lg shadow-xl max-h-[90vh] overflow-y-auto">
+        <div className="fixed inset-0 bg-black bg-opacity-30 z-50">
+          <div className="fixed right-0 top-0 h-full w-full max-w-md bg-white shadow-2xl transform transition-transform duration-300 ease-in-out overflow-y-auto border-l border-gray-200">
             <div className="flex items-center justify-between p-6 border-b border-gray-200">
               <h3 className="text-lg font-semibold">Add Module</h3>
               <button 
@@ -460,6 +460,10 @@ const UserManagement = ({ activeSub, setActiveSub }) => {
                   <option value="Inactive">Inactive</option>
                 </select>
               </div>
+              <div className="flex gap-3 pt-4 sticky bottom-0 bg-white border-t border-gray-200 p-4 -mx-4">
+                <Button type="submit" className="flex-1 bg-green-600 hover:bg-green-700 text-white">Add Module</Button>
+                <Button type="button" onClick={() => setShowAddModuleModal(false)} className="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-700">Cancel</Button>
+              </div>
             </form>
           </div>
         </div>
@@ -467,8 +471,8 @@ const UserManagement = ({ activeSub, setActiveSub }) => {
 
       {/* Add Action Modal/Sidebar */}
       {showAddActionModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white w-full max-w-md mx-4 rounded-lg shadow-xl max-h-[90vh] overflow-y-auto">
+        <div className="fixed inset-0 bg-black bg-opacity-30 z-50">
+          <div className="fixed right-0 top-0 h-full w-full max-w-md bg-white shadow-2xl transform transition-transform duration-300 ease-in-out overflow-y-auto border-l border-gray-200">
             <div className="flex items-center justify-between p-6 border-b border-gray-200">
               <h3 className="text-lg font-semibold">Add Action</h3>
               <button 
@@ -525,6 +529,10 @@ const UserManagement = ({ activeSub, setActiveSub }) => {
                   <option value="Inactive">Inactive</option>
                 </select>
               </div>
+              <div className="flex gap-3 pt-4 sticky bottom-0 bg-white border-t border-gray-200 p-4 -mx-4">
+                <Button type="submit" className="flex-1 bg-green-600 hover:bg-green-700 text-white">Add Action</Button>
+                <Button type="button" onClick={() => setShowAddActionModal(false)} className="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-700">Cancel</Button>
+              </div>
             </form>
           </div>
         </div>
@@ -532,8 +540,8 @@ const UserManagement = ({ activeSub, setActiveSub }) => {
 
       {/* Assign Role-Module Modal/Sidebar */}
       {showAssignRoleModuleModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white w-full max-w-md mx-4 rounded-lg shadow-xl max-h-[90vh] overflow-y-auto">
+        <div className="fixed inset-0 bg-black bg-opacity-30 z-50">
+          <div className="fixed right-0 top-0 h-full w-full max-w-md bg-white shadow-2xl transform transition-transform duration-300 ease-in-out overflow-y-auto border-l border-gray-200">
             <div className="flex items-center justify-between p-6 border-b border-gray-200">
               <h3 className="text-lg font-semibold">Assign Role-Module</h3>
               <button 
@@ -594,6 +602,10 @@ const UserManagement = ({ activeSub, setActiveSub }) => {
                   <option value="Inactive">Inactive</option>
                 </select>
               </div>
+              <div className="flex gap-3 pt-4 sticky bottom-0 bg-white border-t border-gray-200 p-4 -mx-4">
+                <Button type="submit" className="flex-1 bg-green-600 hover:bg-green-700 text-white">Assign Role-Module</Button>
+                <Button type="button" onClick={() => setShowAssignRoleModuleModal(false)} className="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-700">Cancel</Button>
+              </div>
             </form>
           </div>
         </div>
@@ -601,8 +613,8 @@ const UserManagement = ({ activeSub, setActiveSub }) => {
 
       {/* Create New User Modal/Sidebar */}
       {showAddUserModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white w-full max-w-md mx-4 rounded-lg shadow-xl max-h-[90vh] overflow-y-auto">
+        <div className="fixed inset-0 bg-black bg-opacity-30 z-50">
+          <div className="fixed right-0 top-0 h-full w-full max-w-md bg-white shadow-2xl transform transition-transform duration-300 ease-in-out overflow-y-auto border-l border-gray-200">
             <div className="flex items-center justify-between p-6 border-b border-gray-200">
               <h3 className="text-lg font-semibold">Create New User</h3>
               <button 
@@ -662,6 +674,10 @@ const UserManagement = ({ activeSub, setActiveSub }) => {
                   <option value="Inactive">Inactive</option>
                 </select>
               </div>
+              <div className="flex gap-3 pt-4 sticky bottom-0 bg-white border-t border-gray-200 p-4 -mx-4">
+                <Button type="submit" className="flex-1 bg-green-600 hover:bg-green-700 text-white">Add User</Button>
+                <Button type="button" onClick={() => setShowAddUserModal(false)} className="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-700">Cancel</Button>
+              </div>
             </form>
           </div>
         </div>
@@ -669,8 +685,8 @@ const UserManagement = ({ activeSub, setActiveSub }) => {
 
       {/* Create New Role Modal/Sidebar */}
       {showAddRoleModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white w-full max-w-md mx-4 rounded-lg shadow-xl max-h-[90vh] overflow-y-auto">
+        <div className="fixed inset-0 bg-black bg-opacity-30 z-50">
+          <div className="fixed right-0 top-0 h-full w-full max-w-md bg-white shadow-2xl transform transition-transform duration-300 ease-in-out overflow-y-auto border-l border-gray-200">
             <div className="flex items-center justify-between p-6 border-b border-gray-200">
               <h3 className="text-lg font-semibold">Create New Role</h3>
               <button 
@@ -710,6 +726,10 @@ const UserManagement = ({ activeSub, setActiveSub }) => {
                   <option value="Inactive">Inactive</option>
                 </select>
               </div>
+              <div className="flex gap-3 pt-4 sticky bottom-0 bg-white border-t border-gray-200 p-4 -mx-4">
+                <Button type="submit" className="flex-1 bg-green-600 hover:bg-green-700 text-white">Add Role</Button>
+                <Button type="button" onClick={() => setShowAddRoleModal(false)} className="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-700">Cancel</Button>
+              </div>
             </form>
           </div>
         </div>
@@ -717,8 +737,8 @@ const UserManagement = ({ activeSub, setActiveSub }) => {
 
       {/* Edit User Modal/Sidebar */}
       {showEditUserModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white w-full max-w-md mx-4 rounded-lg shadow-xl max-h-[90vh] overflow-y-auto">
+        <div className="fixed inset-0 bg-black bg-opacity-30 z-50">
+          <div className="fixed right-0 top-0 h-full w-full max-w-md bg-white shadow-2xl transform transition-transform duration-300 ease-in-out overflow-y-auto border-l border-gray-200">
             <div className="flex items-center justify-between p-6 border-b border-gray-200">
               <h3 className="text-lg font-semibold">Edit User</h3>
               <button 
@@ -793,6 +813,10 @@ const UserManagement = ({ activeSub, setActiveSub }) => {
                   onChange={e => setEditUserForm(f => ({ ...f, description: e.target.value }))}
                 />
               </div>
+              <div className="flex gap-3 pt-4 sticky bottom-0 bg-white border-t border-gray-200 p-4 -mx-4">
+                <Button type="submit" className="flex-1 bg-green-600 hover:bg-green-700 text-white">Update User</Button>
+                <Button type="button" onClick={() => setShowEditUserModal(false)} className="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-700">Cancel</Button>
+              </div>
             </form>
           </div>
         </div>
@@ -800,8 +824,8 @@ const UserManagement = ({ activeSub, setActiveSub }) => {
 
       {/* Edit Role Modal/Sidebar */}
       {showEditRoleModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white w-full max-w-md mx-4 rounded-lg shadow-xl max-h-[90vh] overflow-y-auto">
+        <div className="fixed inset-0 bg-black bg-opacity-30 z-50">
+          <div className="fixed right-0 top-0 h-full w-full max-w-md bg-white shadow-2xl transform transition-transform duration-300 ease-in-out overflow-y-auto border-l border-gray-200">
             <div className="flex items-center justify-between p-6 border-b border-gray-200">
               <h3 className="text-lg font-semibold">Edit Role</h3>
               <button 
@@ -841,6 +865,10 @@ const UserManagement = ({ activeSub, setActiveSub }) => {
                   <option value="Inactive">Inactive</option>
                 </select>
               </div>
+              <div className="flex gap-3 pt-4 sticky bottom-0 bg-white border-t border-gray-200 p-4 -mx-4">
+                <Button type="submit" className="flex-1 bg-green-600 hover:bg-green-700 text-white">Update Role</Button>
+                <Button type="button" onClick={() => setShowEditRoleModal(false)} className="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-700">Cancel</Button>
+              </div>
             </form>
           </div>
         </div>
@@ -848,8 +876,8 @@ const UserManagement = ({ activeSub, setActiveSub }) => {
 
       {/* Edit Module Modal/Sidebar */}
       {showEditModuleModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white w-full max-w-md mx-4 rounded-lg shadow-xl max-h-[90vh] overflow-y-auto">
+        <div className="fixed inset-0 bg-black bg-opacity-30 z-50">
+          <div className="fixed right-0 top-0 h-full w-full max-w-md bg-white shadow-2xl transform transition-transform duration-300 ease-in-out overflow-y-auto border-l border-gray-200">
             <div className="flex items-center justify-between p-6 border-b border-gray-200">
               <h3 className="text-lg font-semibold">Edit Module</h3>
               <button 
@@ -889,6 +917,10 @@ const UserManagement = ({ activeSub, setActiveSub }) => {
                   <option value="Inactive">Inactive</option>
                 </select>
               </div>
+              <div className="flex gap-3 pt-4 sticky bottom-0 bg-white border-t border-gray-200 p-4 -mx-4">
+                <Button type="submit" className="flex-1 bg-green-600 hover:bg-green-700 text-white">Update Module</Button>
+                <Button type="button" onClick={() => setShowEditModuleModal(false)} className="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-700">Cancel</Button>
+              </div>
             </form>
           </div>
         </div>
@@ -896,8 +928,8 @@ const UserManagement = ({ activeSub, setActiveSub }) => {
 
       {/* Edit Action Modal/Sidebar */}
       {showEditActionModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white w-full max-w-md mx-4 rounded-lg shadow-xl max-h-[90vh] overflow-y-auto">
+        <div className="fixed inset-0 bg-black bg-opacity-30 z-50">
+          <div className="fixed right-0 top-0 h-full w-full max-w-md bg-white shadow-2xl transform transition-transform duration-300 ease-in-out overflow-y-auto border-l border-gray-200">
             <div className="flex items-center justify-between p-6 border-b border-gray-200">
               <h3 className="text-lg font-semibold">Edit Action</h3>
               <button 
@@ -950,6 +982,10 @@ const UserManagement = ({ activeSub, setActiveSub }) => {
                   <option value="Inactive">Inactive</option>
                 </select>
               </div>
+              <div className="flex gap-3 pt-4 sticky bottom-0 bg-white border-t border-gray-200 p-4 -mx-4">
+                <Button type="submit" className="flex-1 bg-green-600 hover:bg-green-700 text-white">Update Action</Button>
+                <Button type="button" onClick={() => setShowEditActionModal(false)} className="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-700">Cancel</Button>
+              </div>
             </form>
           </div>
         </div>
@@ -957,8 +993,8 @@ const UserManagement = ({ activeSub, setActiveSub }) => {
 
       {/* Edit Assign Role-Module Modal/Sidebar */}
       {showEditAssignModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white w-full max-w-md mx-4 rounded-lg shadow-xl max-h-[90vh] overflow-y-auto">
+        <div className="fixed inset-0 bg-black bg-opacity-30 z-50">
+          <div className="fixed right-0 top-0 h-full w-full max-w-md bg-white shadow-2xl transform transition-transform duration-300 ease-in-out overflow-y-auto border-l border-gray-200">
             <div className="flex items-center justify-between p-6 border-b border-gray-200">
               <h3 className="text-lg font-semibold">Edit Assign Role-Module</h3>
               <button 
@@ -1015,6 +1051,10 @@ const UserManagement = ({ activeSub, setActiveSub }) => {
                   <option value="Inactive">Inactive</option>
                 </select>
               </div>
+              <div className="flex gap-3 pt-4 sticky bottom-0 bg-white border-t border-gray-200 p-4 -mx-4">
+                <Button type="submit" className="flex-1 bg-green-600 hover:bg-green-700 text-white">Update Assignment</Button>
+                <Button type="button" onClick={() => setShowEditAssignModal(false)} className="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-700">Cancel</Button>
+              </div>
             </form>
           </div>
         </div>
@@ -1023,4 +1063,4 @@ const UserManagement = ({ activeSub, setActiveSub }) => {
   );
 };
 
-export default UserManagement; 
+export default UserManagement;
