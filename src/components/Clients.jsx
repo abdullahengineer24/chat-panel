@@ -143,19 +143,19 @@ const Clients = ({ onBack }) => {
 
       {/* Add New Client Modal/Sidebar */}
       {showAddModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white w-full max-w-md mx-4 rounded-lg shadow-xl max-h-[90vh] overflow-y-auto">
-            <div className="flex items-center justify-between p-6 border-b border-gray-200">
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-50">
+          <div className="fixed right-0 top-0 h-full w-96 bg-white shadow-xl transform transition-transform duration-300 ease-in-out overflow-y-auto">
+            <div className="flex items-center justify-between p-4 border-b border-gray-200 sticky top-0 bg-white z-10">
               <h3 className="text-lg font-semibold">Add New Client</h3>
               <button 
                 onClick={() => setShowAddModal(false)}
-                className="p-2 hover:bg-gray-100 rounded"
+                className="p-1 hover:bg-gray-100 rounded"
               >
                 <X className="w-5 h-5" />
               </button>
             </div>
             
-            <form onSubmit={handleSubmit} className="p-6 space-y-6">
+            <form onSubmit={handleSubmit} className="p-4 space-y-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Client Name
@@ -242,7 +242,7 @@ const Clients = ({ onBack }) => {
                 </Select>
               </div>
 
-              <div className="flex gap-3 pt-4">
+              <div className="flex gap-3 pt-4 sticky bottom-0 bg-white border-t border-gray-200 p-4 -mx-4">
                 <Button 
                   type="submit" 
                   className="flex-1 bg-blue-600 hover:bg-blue-700 text-white"
@@ -264,18 +264,18 @@ const Clients = ({ onBack }) => {
 
       {/* Edit Client Modal/Sidebar */}
       {showEditModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white w-full max-w-md mx-4 rounded-lg shadow-xl max-h-[90vh] overflow-y-auto">
-            <div className="flex items-center justify-between p-6 border-b border-gray-200">
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-50">
+          <div className="fixed right-0 top-0 h-full w-96 bg-white shadow-xl transform transition-transform duration-300 ease-in-out overflow-y-auto">
+            <div className="flex items-center justify-between p-4 border-b border-gray-200 sticky top-0 bg-white z-10">
               <h3 className="text-lg font-semibold">Edit Client</h3>
               <button 
                 onClick={() => setShowEditModal(false)}
-                className="p-2 hover:bg-gray-100 rounded"
+                className="p-1 hover:bg-gray-100 rounded"
               >
                 <X className="w-5 h-5" />
               </button>
             </div>
-            <form className="p-6 space-y-6">
+            <form className="p-4 space-y-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Client Name</label>
                 <Input
@@ -333,6 +333,21 @@ const Clients = ({ onBack }) => {
                   <option value="Active">Active</option>
                   <option value="Inactive">Inactive</option>
                 </select>
+              </div>
+              <div className="flex gap-3 pt-4 sticky bottom-0 bg-white border-t border-gray-200 p-4 -mx-4">
+                <Button 
+                  type="submit" 
+                  className="flex-1 bg-blue-600 hover:bg-blue-700 text-white"
+                >
+                  Update Client
+                </Button>
+                <Button 
+                  type="button" 
+                  onClick={() => setShowEditModal(false)}
+                  className="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-700"
+                >
+                  Cancel
+                </Button>
               </div>
             </form>
           </div>
