@@ -143,8 +143,8 @@ const Clients = ({ onBack }) => {
 
       {/* Add New Client Modal/Sidebar */}
       {showAddModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-50">
-          <div className="fixed right-0 top-0 h-full w-96 bg-white shadow-xl transform transition-transform duration-300 ease-in-out overflow-y-auto">
+        <div className="fixed inset-0 bg-black bg-opacity-30 z-50">
+          <div className="fixed right-0 top-0 h-full w-full max-w-md bg-white shadow-2xl transform transition-transform duration-300 ease-in-out overflow-y-auto border-l border-gray-200">
             <div className="flex items-center justify-between p-4 border-b border-gray-200 sticky top-0 bg-white z-10">
               <h3 className="text-lg font-semibold">Add New Client</h3>
               <button 
@@ -264,8 +264,8 @@ const Clients = ({ onBack }) => {
 
       {/* Edit Client Modal/Sidebar */}
       {showEditModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-50">
-          <div className="fixed right-0 top-0 h-full w-96 bg-white shadow-xl transform transition-transform duration-300 ease-in-out overflow-y-auto">
+        <div className="fixed inset-0 bg-black bg-opacity-30 z-50">
+          <div className="fixed right-0 top-0 h-full w-full max-w-md bg-white shadow-2xl transform transition-transform duration-300 ease-in-out overflow-y-auto border-l border-gray-200">
             <div className="flex items-center justify-between p-4 border-b border-gray-200 sticky top-0 bg-white z-10">
               <h3 className="text-lg font-semibold">Edit Client</h3>
               <button 
@@ -337,7 +337,7 @@ const Clients = ({ onBack }) => {
               <div className="flex gap-3 pt-4 sticky bottom-0 bg-white border-t border-gray-200 p-4 -mx-4">
                 <Button 
                   type="submit" 
-                  className="flex-1 bg-blue-600 hover:bg-blue-700 text-white"
+                  className="flex-1 bg-green-600 hover:bg-green-700 text-white"
                 >
                   Update Client
                 </Button>
